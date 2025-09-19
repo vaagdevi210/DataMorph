@@ -26,6 +26,6 @@ A web app to **convert MS-Excel/CSV data into a structured database-ready format
 ## 🚀 Quick Start (Docker)
 
 ```bash
-git clone [https://github.com/vaagdevi210/DataMorph.git](https://github.com/vaagdevi210/DataMorph.git)
+git clone https://github.com/vaagdevi210/DataMorph.git
 cd <repo>
 docker compose up --build
