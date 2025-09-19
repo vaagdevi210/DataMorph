@@ -29,3 +29,23 @@ A web app to **convert MS-Excel/CSV data into a structured database-ready format
 git clone https://github.com/vaagdevi210/DataMorph.git
 cd <repo>
 docker compose up --build
+
+Frontend: http://localhost:3000
+Backend API: http://localhost:8000
+
+
+## **Local Deployment**
+
+Backend
+
+cd backend
+pip install -r requirements.txt
+uvicorn server:app --reload --port 8000
+
+Frontend
+
+cd frontend
+npm install
+npm start
+
+
