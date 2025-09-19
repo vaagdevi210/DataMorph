@@ -1,0 +1,27 @@
+version: "3"
+services:
+  backend:
+    build: ./backend
+    container_name: datamorph-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - datamorphnet
+
+  frontend:
+    build: ./frontend
+    container_name: datamorph-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - datamorphnet
+
+networks:
+  datamorphnet:
+    driver: bridge
